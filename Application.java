@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package lab01;
-=======
-package Lab01;
->>>>>>> 5d7b318 (End of Section E)
 import java.util.Scanner;
 public class Application {
    public static void main(String[] args) {
@@ -65,8 +61,7 @@ public class Application {
            case "tan":
                System.out.println("Result: " + tan(num1));
                break;
-<<<<<<< HEAD
-=======
+
            case "perm":
                if (args.length < 3) {
                    System.out.println("Insufficient arguments provided for permutations.");
@@ -91,7 +86,7 @@ public class Application {
                    System.out.println("Please specify the method: 1 for Recursive Permutations, 2 for Non-Recursive Permutations");
                }
                break;
->>>>>>> 5d7b318 (End of Section E)
+
            default:
                System.out.println("Invalid operation");
                break;
@@ -101,11 +96,11 @@ public class Application {
    public static void interactiveMode() {
        Scanner scanner = new Scanner(System.in);
        while (true) {
-<<<<<<< HEAD
+
            System.out.println("Enter operation (add, subtract, multiply, divide, factorial, pow, sqrt, log, log10, sin, cos, tan, exit): ");
-=======
+
            System.out.println("Enter operation (add, subtract, multiply, divide, factorial, pow, sqrt, log, log10, sin, cos, tan, perm, exit): ");
->>>>>>> 5d7b318 (End of Section E)
+
            String operation = scanner.next().toLowerCase();
            if (operation.equals("exit")) {
                break;
@@ -186,8 +181,6 @@ public class Application {
                    double valueTan = scanner.nextDouble();
                    System.out.println("Result: " + tan(valueTan));
                    break;
-<<<<<<< HEAD
-=======
                case "perm":
                    System.out.println("Enter the total number of elements (n):");
                    int n = scanner.nextInt();
@@ -207,7 +200,7 @@ public class Application {
                        System.out.println(e.getMessage());
                    }
                    break;
->>>>>>> 5d7b318 (End of Section E)
+
                default:
                    System.out.println("Invalid operation");
                    break;
@@ -294,11 +287,8 @@ public class Application {
     * @return The sine of a in radians
     */
    public static double sin(double a) {
-<<<<<<< HEAD
-       return Math.sin(a);
-=======
 	   return Math.sin(Math.toRadians(a));
->>>>>>> 5d7b318 (End of Section E)
+
    }
 
    /**
@@ -307,11 +297,8 @@ public class Application {
     * @return The cosine of a in radians
     */
    public static double cos(double a) {
-<<<<<<< HEAD
-       return Math.cos(a);
-=======
-	   return Math.cos(Math.toRadians(a));
->>>>>>> 5d7b318 (End of Section E)
+       return Math.cos(Math.toRadians(a));
+
    }
 
    /**
@@ -320,11 +307,8 @@ public class Application {
     * @return The tangent of a in radians
     */
    public static double tan(double a) {
-<<<<<<< HEAD
-       return Math.tan(a);
-=======
-	   return Math.tan(Math.toRadians(a));
->>>>>>> 5d7b318 (End of Section E)
+         return Math.tan(Math.toRadians(a));
+
    }
    // Factorial calculation with progress display
    public static long factorial(int num) {
@@ -346,8 +330,7 @@ public class Application {
        return num * factorialHelper(originalNum, num - 1);
        
    }
-<<<<<<< HEAD
-=======
+
    
    public static int permutationsRecursive(int n, int r) {
        if (n < 0 || r < 0 || r > 100 || n > 100) {
@@ -375,7 +358,6 @@ public class Application {
        }
        return result;
    }
->>>>>>> 5d7b318 (End of Section E)
 }
 
 
